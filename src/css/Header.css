@@ -1,7 +1,5 @@
 .Header {
-    display: inline-block;
     width: 100%;
-    height: 60vh;
     background-image: url("../media/header-background.png");
     background-size: cover;
     background-color: rgb(33, 10, 44);
@@ -11,14 +9,19 @@
   
   .HeaderText {
     padding: 7%;
-    color: pink;
-    font-weight: 100;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.5em;
+  }
+
+  h1 {
+    color: whitesmoke;
+  }
+
+  .HeaderText h3 {
+    color: whitesmoke;
   }
   
   .Name {
     color: hotpink;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 100;
   }

@@ -16,26 +16,24 @@ class EducationPopup extends React.Component {
                 >
                 {close => (
                     <div>
-                        <div className="header"> <h2>Relevant Modules Taken</h2> </div>
+                        <div> <h2>Relevant Modules Taken</h2> </div>
                         <div className="content">
-                        <ul>
-                            <li>Programming Methodology I</li>
-                            <li>Programming Methodology II</li>
-                            <li>Algorithms and Data Structures</li>
-                            <li>Computer Organization</li>
-                            <li>Introduction to Software Engineering</li>
-                            <li>Introduction to Operating Systems</li>
-                            <li>Introduction to Computer Networks</li>
-                            <li>Intorduction to Information Security</li>
-                        </ul>
+                          <h3>Programming and Discrete Structures</h3>
+                          <p>Programming Methodology I | Programming Methodology II | Discrete Structures</p>
+                          <h3>Data Structures</h3>
+                          <p>Data Structures and Algorithms</p>
+                          <h3>Software Engineering</h3>
+                          <p>Introduction to Software Engineering</p>
+                          <h3>Operating Systems</h3>
+                          <p>Computer Organization | Introduction to Operating Systems</p>
+                          <h3>Computer Security</h3>
+                          <p>Introduction to Information Security</p>
+                          <h3>Networks</h3>
+                          <p>Introduction to Computer Networks</p>
                         </div>
                         <div className="actions">
-                            <button className="button"
-                                onClick={() => {
-                                    close();
-                                }}
-                            >
-                                <p>I'm done reading!</p>
+                            <button className="button" onClick={() => {close();}}>
+                                I'm done reading!
                             </button>
                         </div>
                     </div>
@@ -48,36 +46,34 @@ class EducationPopup extends React.Component {
 
 class About extends React.Component {
   state = {
-    isAbout: true,
-    isEducation: false
+    isAbout: true
   }
   AboutHandler = () => {
     this.setState({
-        isAbout: true, 
-        isEducation: false
+        isAbout: true
     })
   }
 
   EducationHandler = () => {
     this.setState({
-        isAbout: false,
-        isEducation: true
+        isAbout: false
     })
   }
 
   aboutHandler() {
     if(this.state.isAbout) {
       return (
-        <div className="AboutInfo">
+        <div>
             <img className="Profile" src={profile} alt="Profile Photo"></img>
-            <p className="AboutPara">Hi I am Arun Kumarr and I love to code.</p>
+            <p>Hi I am Arun Kumarr and I love to code.</p>
           </div>
       );
     } else {
       return (
         <div className="Education">
+          <h3>National University of Singapore, Singapore</h3>
+          <p>Bachelors in Computer Science</p>
           <EducationPopup/>
-          <p className="AboutInfo">My crib is NUS</p>
         </div>
       );
     }
@@ -86,8 +82,10 @@ class About extends React.Component {
     return (
       <div className="Card">
         <div className="Option">
-          <button onClick={this.AboutHandler} >About Me</button>
-          <button onClick={this.EducationHandler} >Education</button>
+          <ul>
+            <li><button className={this.state.isAbout ? "ActiveButton" : "SilentButton"} onClick={this.AboutHandler} autoFocus>About Me</button></li>
+            <li><button className={this.state.isAbout ? "SilentButton" : "ActiveButton"} onClick={this.EducationHandler} >Education</button></li>
+          </ul>
         </div>
         { this.aboutHandler() }
       </div>

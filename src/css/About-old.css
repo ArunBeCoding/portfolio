@@ -1,0 +1,118 @@
+.Card {
+    width: 70%;
+    padding: 1%;
+    display: inline-block;
+    background-color: darkslategrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    border-radius: 20px;
+}
+
+.Option li {
+    display: inline-block;
+    /* float: left; */
+}
+
+@media screen and (max-width: 600px) {
+    .Card {
+        text-align: center;
+    }
+    .Card li{
+        display: block;
+    }
+    .Option {
+        text-align: center;
+    }
+}
+
+.Option button {
+    background-color: darkslategray;
+    color: darkturquoise;
+    border: none;
+    padding: 12% 12%;
+    text-align: center;
+    transition-duration: 0.2s;
+    font-size: 1.2em;
+    border-radius: 1vw;
+}
+  
+.Option button:hover {
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.151), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.Option button:focus {
+    color: whitesmoke;
+    background-color: lightskyblue;
+    outline: none;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.151), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.Profile {
+    float: left;
+    width: 10%;
+    border-radius: 50%;
+    padding-right: 1%;
+}
+
+.Education {
+    color: whitesmoke;
+    padding: 4%;
+    text-align: center;
+}
+
+.Modules {
+    display: inline-block;
+}
+
+.Modules button {
+    background-color: darkgray;
+    color: darkslategray;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    font-size: 3vh;
+    width: 20vw;
+    height: 5vw;
+    border-radius: 1vw;
+}
+
+.Modules button:hover {
+    background-color: darkslategray;
+    color: darkgray;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.151), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.content ul {
+    color: darkslategray;
+    font-size: 1em;
+}
+
+.content li {
+    display: block;
+}
+
+.actions {
+    text-align: center;
+}
+
+.actions button {
+  width: 35%;
+  height: 7vh;
+  border-radius: 1vw;
+}
+
+h2 {
+    color: darkturquoise;
+    font-size: 1.5em;
+}
+
+button {
+    outline: none;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
