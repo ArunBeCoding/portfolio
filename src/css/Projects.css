@@ -1,0 +1,75 @@
+.Projects {
+    padding-top: 30px;
+}
+
+.Projects .Card {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #184A45;
+    border-radius: 20px;
+    padding: 30px;
+    height: auto;
+}
+
+.Options {
+    margin: 0 auto;
+    display: table;
+}
+
+.Options li {
+    display: inline;
+    padding: 15px;
+}
+
+.ProjectsContent {
+    text-align: center;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+    .Projects .Card {
+        padding: 20px;
+    }
+
+    .Projects {
+        padding-top: 20px;
+    }
+
+    .Projects .Options {
+        margin: auto;
+        display: block;
+    }
+    
+    .Projects .Options li {
+        display: block;
+        padding: 15px;
+    }
+    
+    /* .external .InternList li {
+        padding: 10px;
+    }
+
+    .Popup .content {
+        max-height: 200px;
+        overflow: scroll;
+        overflow-x: hidden; 
+    }
+
+    .actions button {
+        color: whitesmoke;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background-color: #FC766A;
+        padding: 15px 30px;
+        cursor: pointer;
+        transition-duration: 0.2s;
+    } */
+}

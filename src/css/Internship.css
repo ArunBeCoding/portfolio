@@ -7,6 +7,7 @@
     background-color: #184A45;
     border-radius: 20px;
     padding: 30px;
+    height: auto;
 }
 
 .external .Options {
@@ -160,5 +161,16 @@
         max-height: 200px;
         overflow: scroll;
         overflow-x: hidden; 
+    }
+
+    .actions button {
+        color: whitesmoke;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        background-color: #FC766A;
+        padding: 15px 30px;
+        cursor: pointer;
+        transition-duration: 0.2s;
     }
 }

@@ -3,6 +3,7 @@
     background-color: #184A45;
     border-radius: 20px;
     padding: 30px;
+    height: 250px;
 }
 
 .Profile {
@@ -129,6 +130,7 @@ hr {
 
     .Card {
         padding: 20px;
+        height: 340px;
     }
 
     .Profile {
