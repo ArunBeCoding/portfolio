@@ -29,8 +29,60 @@ table.center {
     margin-right: auto;
 }
 
-table, th, td {
+/* table, th, td {
     border: 1px solid black;
+} */
+
+td {
+    height: 200px;
+    width: 200px;
+}
+
+.ProjPic {
+    height: 200px;
+    width: 200px;
+}
+
+.ProjSquare {
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+
+.Container .ProjBtn {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-size: 25px;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+  
+.Container .ProjBtn:hover {
+    color: black;
+    /* background-color: rgba(255, 255, 255, 0.74); */
+    transform: translate(0%, 0%);
+    opacity: 0.9;
+}
+
+.actions {
+    text-align: center;
+}
+
+.actions button {
+    padding: 15px 30px;
+}
+
+.actions .SpecButton {
+    padding: 10px;
+    display: inline;
 }
 
 @media screen and (max-width: 600px) {
@@ -51,6 +103,27 @@ table, th, td {
         display: block;
         padding: 15px;
     }
+    .actions .SpecButton {
+        padding: 10px;
+        display: block;
+    }
+
+    .Container .ProjBtn {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-size: 25px;
+        height: 160px;
+        width: 160px;
+        opacity: 0.9;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        font-size: 20px;
+      }
     
     /* .external .InternList li {
         padding: 10px;

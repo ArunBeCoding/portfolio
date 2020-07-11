@@ -1,5 +1,69 @@
 import React, { Component } from 'react';
 import "../css/Projects.css";
+import Popup from "reactjs-popup";
+import CPF from "../media/CPFHackathon.png";
+import Makerthon from "../media/Makerthon.jpg";
+import Invest from "../media/Invest.jpg";
+import SoftEng from "../media/SoftEng.jpg";
+
+const CPF_TEXT = "This is CPF text";
+const MAKERTHON_TEXT = "This is Makerthon text";
+const INVEST_TEXT = "This is Invest Text";
+const SE_TEXT = "This is SE text";
+
+const CPF_LINK = "https://github.com/ArunBeCoding/cpf-Monkeybrain-UI";
+const MAKERTHON_LINK = "https://github.com/namiwa/makerthon2020";
+const INVEST_LINK = "https://github.com/NUS-invest-QF-NLP/main";
+const SE_LINK = "https://github.com/AY1920S1-CS2103T-T12-1/main";
+
+class ProjPopup extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return(
+        <Popup trigger={open => (<button className="ProjBtn">Learn about {this.props.name}</button>)} modal closeOnDocumentClick>
+                {close => (
+                    <div className="Popup">
+                        <h2>{this.props.name}</h2> 
+                        <div className="content">
+                            <p>{ this.props.text }</p>
+                        </div>
+                        <div className="actions">
+                            <div className="SpecButton">
+                                <button onClick={() => window.open(this.props.link, "_blank")}>
+                                    View on Github! 
+                                </button>
+                            </div>
+                            <div className="SpecButton">
+                                <button onClick={() => {close();}}>
+                                    You're awesome Arun!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </Popup>
+        );
+    }
+}
+
+class Proj extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return(
+            <div className="ProjSquare">
+                <div className="Container">
+                    <img className="ProjPic" src={this.props.pic}></img>
+                    <ProjPopup name={this.props.name} text={this.props.text} link={this.props.link}/>
+                </div>
+            </div>
+        );
+    }
+}
 
 class ProjectsInfo extends React.Component {
     render() {
@@ -7,12 +71,12 @@ class ProjectsInfo extends React.Component {
             <div className="ProjectsContent">
                 <table className="center">
                     <tr>
-                        <td>CPF Hackathon</td>
-                        <td>NUS Makerthon</td>
-                        <td>NUS Invest</td>
+                        <td><Proj name="CPF Hackathon" pic={ CPF } text={CPF_TEXT} link={CPF_LINK}/></td>
+                        <td><Proj name="NUS Makerthon" pic={ Makerthon } text={MAKERTHON_TEXT} link={MAKERTHON_LINK}/></td>
                     </tr>
                     <tr>
-                        <td>Software Engineering</td>
+                        <td><Proj name="NUS Invest" pic={ Invest } text={INVEST_TEXT} link={INVEST_LINK}/></td>
+                        <td><Proj name="+Work and Duke" pic={ SoftEng } text={SE_TEXT} link={SE_LINK}/></td>
                     </tr>
                 </table>
             </div>
