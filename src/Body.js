@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './css/Body.css';
-import profile from "./media/Profile_Pic.jpg";
-import Popup from "reactjs-popup";
 import About from "./Content/About";
+import Internship from "./Content/Internship";
 
 
 class Body extends React.Component {
@@ -10,6 +9,7 @@ class Body extends React.Component {
         return (
             <div className="Body">
               <About />
+              <Internship />
             </div>
         );
     }

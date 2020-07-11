@@ -1,6 +1,6 @@
 .Card {
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: darkslategray;
+    background-color: #184A45;
     border-radius: 20px;
     padding: 30px;
 }
@@ -40,7 +40,9 @@ ul {
     outline: none;
     background-color: lightskyblue;
     padding: 15px 60px;
+    width: 180px;
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
     transition-duration: 0.2s;
 }
 
@@ -51,7 +53,9 @@ ul {
     border-radius: 10px;
     background-color: grey;
     padding: 15px 60px;
+    width: 180px;
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 button:hover {
@@ -61,14 +65,22 @@ button:hover {
     transform: translateY(-10px);
 }
 
+.Modules .content{
+    height: 400px;
+    overflow: scroll;
+    padding:2%;
+    overflow-x: hidden; 
+}
+
 .Modules button {
     color: whitesmoke;
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: lightcoral;
+    background-color: #FC766A;
     padding: 15px 80px;
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 .Modules button:hover {
@@ -99,6 +111,11 @@ h3 {
     color: lightslategray;
 }
 
+hr {
+    border-color: darkturquoise;
+    width: 90%;
+}
+
 @media screen and (max-width: 600px) {
     .Option {
         margin: auto;
@@ -116,5 +133,12 @@ h3 {
 
     .Profile {
         width: 20%;
+    }
+
+    .Modules .content{
+        /* width: 70vw; */
+        height: 200px;
+        overflow: scroll;
+        overflow-x: hidden; 
     }
 }

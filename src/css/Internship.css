@@ -1,0 +1,164 @@
+.external {
+    padding-top: 30px;
+}
+
+.external .Card {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #184A45;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.external .Options {
+    margin: 0 auto;
+    display: table;
+}
+
+.external .Options li {
+    display: inline;
+    padding: 15px;
+}
+
+.external .ActiveButton {
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: lightskyblue;
+    width: 180px;
+    padding: 15px 60px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.external .SilentButton {
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: grey;
+    padding: 15px 60px;
+    width: 180px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.external button:hover {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: whitesmoke;
+    color: darkorchid;
+    transform: translateY(-10px);
+}
+
+/* .external ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+} */
+
+.external .InternList {
+    margin: 0 auto;
+    display: table;
+}
+
+.external .InternList li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.JobSquare {
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+
+.JobPic {
+    width: 200px;
+    height: auto;
+}  
+
+.Container .btn {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-size: 25px;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+  
+.Container .btn:hover {
+    color: black;
+    /* background-color: rgba(255, 255, 255, 0.74); */
+    transform: translate(0%, 0%);
+    opacity: 0.9;
+}
+
+.external h3 {
+    color: lightskyblue;
+}
+
+.Popup p {
+    color: #184A45;
+}
+
+.Popup .content {
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden; 
+}
+
+.actions button {
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #FC766A;
+    padding: 15px 80px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.actions button:hover {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: whitesmoke;
+    color: darkorchid;
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width: 600px) {
+    .Card {
+        padding: 20px;
+    }
+
+    .external {
+        padding-top: 20px;
+    }
+
+    .external .Options {
+        margin: auto;
+        display: block;
+    }
+    
+    .external .Options li {
+        display: block;
+        padding: 15px;
+    }
+    
+    .external .InternList li {
+        padding: 10px;
+    }
+
+    .Popup .content {
+        max-height: 200px;
+        overflow: scroll;
+        overflow-x: hidden; 
+    }
+}

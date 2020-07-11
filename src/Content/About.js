@@ -15,19 +15,24 @@ class EducationPopup extends React.Component {
                     closeOnDocumentClick
                 >
                 {close => (
-                    <div>
+                    <div className="Popup">
                         <div> <h2>Relevant Modules Taken</h2> </div>
                         <div className="content">
                           <h3>Programming and Discrete Structures</h3>
                           <p>Programming Methodology I | Programming Methodology II | Discrete Structures</p>
+                          <hr/>
                           <h3>Data Structures</h3>
                           <p>Data Structures and Algorithms</p>
+                          <hr/>
                           <h3>Software Engineering</h3>
                           <p>Introduction to Software Engineering</p>
+                          <hr/>
                           <h3>Operating Systems</h3>
                           <p>Computer Organization | Introduction to Operating Systems</p>
+                          <hr/>
                           <h3>Computer Security</h3>
                           <p>Introduction to Information Security</p>
+                          <hr/>
                           <h3>Networks</h3>
                           <p>Introduction to Computer Networks</p>
                         </div>
