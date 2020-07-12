@@ -1,0 +1,93 @@
+.Footer {
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+
+}
+
+.Footer .Card {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #184A45;
+    border-radius: 20px;
+    padding: 20px;
+    height: 500px;
+}
+
+.gif {
+    height: 200px;
+    border: 5px solid whitesmoke;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.SocialLinks {
+    display: table;
+    margin: 0 auto;
+}
+
+.SocialLinks li {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.LinkButton .button1 {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition-duration: 0.2s;
+    background-color: #FC766A;
+    color: blanchedalmond;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.LinkButton .button2 {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition-duration: 0.2s;
+    background-color: rgb(115, 228, 3);
+    color: chocolate;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.LinkButton .button3 {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition-duration: 0.2s;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .Footer .Card {
+        height: auto;
+    }
+
+    .SocialLinks {
+        display: block;
+        margin: auto;
+    }
+    
+    .SocialLinks li {
+        float: none;
+        padding: 10px;
+    }
+}

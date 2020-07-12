@@ -16,6 +16,8 @@ const MAKERTHON_LINK = "https://github.com/namiwa/makerthon2020";
 const INVEST_LINK = "https://github.com/NUS-invest-QF-NLP/main";
 const SE_LINK = "https://github.com/AY1920S1-CS2103T-T12-1/main";
 
+const HACKATHON_TEXT = "These hackathons have played a huge role in my learning. Even though I have not won any hackathons YET, I feel grateful to have gone through these experiences. As such, I believe it is important to display these hackathons as lessons learnt from my failures";
+
 class ProjPopup extends React.Component {
     constructor(props) {
         super(props);
@@ -89,7 +91,7 @@ class HackathonsInfo extends React.Component {
         return(
             <div className="HackathonsContent">
                 <div className="HackExpln">
-                    <p>I like to participate in Hackthons!</p>
+                    <p>{ HACKATHON_TEXT }</p>
                 </div>
                 <div className="HackList">
                     <ul>

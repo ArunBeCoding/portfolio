@@ -94,19 +94,20 @@ td {
 .HackathonsContent .HackExpln {
     float: left;
     width: 400px;
-    height: 300px;
+    height: 200px;
     padding: 50px;
+    padding-top: 100px;;
     /* border: 1px solid black; */
 }
 
 .HackathonsContent .HackList {
     float: left;
-    width: 400px;
+    width: 350px;
 }
 
 .HackathonsContent ul {
     height: 350px;
-    width: 400px;
+    width: 350px;
     border-radius: 10px;
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: whitesmoke;
@@ -163,7 +164,6 @@ td {
 
 .SkillsCertifications ul{
     background-color: cornflowerblue;
-    /* color: darkorchid; */
     color: lightblue;
 }
 
@@ -208,6 +208,22 @@ td {
         display: block;
     }
 
+    td {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .ProjPic {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .ProjSquare {
+        width: 150px;
+        height: auto;
+        position: relative;
+    }
+
     .Container .ProjBtn {
         position: absolute;
         top: 10%;
@@ -215,8 +231,8 @@ td {
         background-color: rgb(255, 255, 255);
         color: black;
         font-size: 25px;
-        height: 160px;
-        width: 160px;
+        height: 120px;
+        width: 120px;
         opacity: 0.9;
         border: none;
         outline: none;
