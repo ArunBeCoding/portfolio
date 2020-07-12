@@ -87,18 +87,82 @@ class ProjectsInfo extends React.Component {
 class HackathonsInfo extends React.Component {
     render() {
         return(
-            <div className="HackthonsContent">
-                <p>This is Hackathons</p>
+            <div className="HackathonsContent">
+                <div className="HackExpln">
+                    <p>I like to participate in Hackthons!</p>
+                </div>
+                <div className="HackList">
+                    <ul>
+                        <li>Shoppee Code League 2020</li>
+                        <li>DSTA Brainhack CDDC 2020</li>
+                        <li>CPF Hackathon</li>
+                        <li>NUS Makerthon 2020</li>
+                        <li>National Blockchain Challenge 2019</li>
+                    </ul>
+                </div>
             </div>
         );
     }
+}
+
+function SkillsLanguage() {
+    return (
+        <div className="SkillsCard SkillsLanguage">
+            <ul>
+                <lh>Languages</lh>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>JavaScript</li>
+                <li>HTML and CSS</li>
+            </ul>
+        </div>
+    );
+}
+
+function SkillsFrameworks() {
+    return (
+        <div className="SkillsCard SkillsFrameworks">
+            <ul>
+                <lh>Framework</lh>
+                <hr />
+                <li className="subHeader">Full Stack</li>
+                <li>reactjs, firebase, Flask, Spring Boot</li>
+                <hr />
+
+                <li className="subHeader">Data Analytics Libraries</li>
+                <li>SciPy, TensorFlow</li>
+                <hr />
+
+                <li className="subHeader">Databases</li>
+                <li>MongoDB, FireStore</li>
+                <hr />
+
+                <li className="subHeader">DevOps</li>
+                <li>GitLab, Docker</li>
+            </ul>
+        </div>
+    );
+}
+
+function SkillsCertifications() {
+    return(
+        <div className="SkillsCard SkillsCertifications">
+            <ul>
+                <lh>Certifications</lh>
+                <li>AZ-900: Microsoft Azure Fundementals</li>
+            </ul>
+        </div>
+    );
 }
 
 class SkillsInfo extends React.Component {
     render() {
         return(
             <div className="SkillsContent">
-                <p>This is Skills</p>
+                {SkillsLanguage()}
+                {SkillsFrameworks()}
+                {SkillsCertifications()}
             </div>
         );
     }
