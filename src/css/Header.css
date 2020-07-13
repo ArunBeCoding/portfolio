@@ -5,23 +5,44 @@
     background-color: rgb(33, 10, 44);
     background-blend-mode: screen;
     text-align: center;
+    height: auto;
   }
   
   .HeaderText {
-    padding: 7%;
+    margin: 0 auto;
+    padding: 9%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.5em;
+    text-align: center;
   }
 
-  h1 {
-    color: whitesmoke;
+  .Shade {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    padding: 9%;
   }
 
   .HeaderText h3 {
     color: whitesmoke;
+    font-weight: 900;
+  }
+
+  .HeaderText h2 {
+    color: whitesmoke;
+    font-weight: 900;
+    display: inline;
   }
   
   .Name {
+    display: inline;
     color: hotpink;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+  }
+
+  @media screen and (max-width: 600px) {
+    .Header {
+      height: auto;
+    }
   }
