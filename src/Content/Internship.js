@@ -6,10 +6,10 @@ import TLS from "../media/TLS_logo.png";
 import Invest from "../media/Invest_logo.jpg";
 import Popup from "reactjs-popup";
 
-const CATENA_TEXT = "This was my first awesome internship!";
-const CK_TEXT = "This is my second awesome internship!";
-const TLS_TEXT = "This was my first CCA!";
-const INVEST_TEXT = "This is my second CCA!"; 
+const CATENA_TEXT = "Optimized end to end testing deployment by working on GOCD and writing linux shell scripts to produce a one-click deployment process, reducing it from the multiple-step process previously used. I also wrote test cases and validation scripts to ensure software's output met the conditions expected by client's trade repositories.";
+const CK_TEXT = "Designed infrastructures on Azure cloud platform and performed cost analysis for clients who were migrating their services to cloud. Other than learning fundamentals of cloud computing such as security, compute, and networking, I also had to learn containerization and serverless computing.";
+const TLS_TEXT = "As a project director for the community service directorate, I planned and implemented a reintegration program with residents of the Ashram halfway house which inspired them to re-evaluate their future and helped easing back into society. Moreover, we also collaborated with other local universities to conduct heritage activities for students from three universities.";
+const INVEST_TEXT = "I was a quantitative finance engineer for a year in NUS Invest. The link to Github repository that we worked on is given in the projects section below."; 
 
 class JobPopup extends React.Component {
     constructor(props) {

@@ -6,10 +6,10 @@ import Makerthon from "../media/Makerthon.jpg";
 import Invest from "../media/Invest.jpg";
 import SoftEng from "../media/SoftEng.jpg";
 
-const CPF_TEXT = "This is CPF text";
-const MAKERTHON_TEXT = "This is Makerthon text";
-const INVEST_TEXT = "This is Invest Text";
-const SE_TEXT = "This is SE text";
+const CPF_TEXT = "Worked as a team of 5 to redesign the CPF portal using ReactJS and ExpressJS. Other than a responsive calculator, Azure Personalizer API was also used to design a recommendation bar customized for each user's specific needs.";
+const MAKERTHON_TEXT = "Designed a web application with a team of 4 using MeteorJS for the elderly to create events and meet up for common events. Firebase authentication and Firestore database was used for this project.";
+const INVEST_TEXT = "Worked with quantitative finance specialists to predict the movement of AAPL stock prices. Pandas dataframes & NLP libraries such as sklearn were used to analyze the stock movements.";
+const SE_TEXT = "As a student of Introduction to Software Engineering, I designed two project management software named Duke & +Work using Java.";
 
 const CPF_LINK = "https://github.com/ArunBeCoding/cpf-Monkeybrain-UI";
 const MAKERTHON_LINK = "https://github.com/namiwa/makerthon2020";
@@ -40,7 +40,7 @@ class ProjPopup extends React.Component {
                             </div>
                             <div className="SpecButton">
                                 <button onClick={() => {close();}}>
-                                    You're awesome Arun!
+                                    Sounds Awesome, Arun!
                                 </button>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ class HackathonsInfo extends React.Component {
                 </div>
                 <div className="HackList">
                     <ul>
-                        <li>Shoppee Code League 2020</li>
+                        <li>Shopee Code League 2020</li>
                         <li>DSTA Brainhack CDDC 2020</li>
                         <li>CPF Hackathon</li>
                         <li>NUS Makerthon 2020</li>

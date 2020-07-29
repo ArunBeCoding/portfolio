@@ -70,7 +70,7 @@ class About extends React.Component {
       return (
         <div>
             <img className="Profile" src={profile} alt="Profile Photo"></img>
-            <p>Hi I am Arun Kumarr and I love to code.</p>
+            <p className="AboutMeText">Hi, I am Arun Kumarr. I am currently doing my third year in NUS Computer Science. With a strong passion to learn and build solution-oriented products, I have been a part of numerous projects and competitions, in addition to my internships in various roles. My key interests lie in ​information security​, ​software engineering ​and ​cloud computing​.</p>
           </div>
       );
     } else {
@@ -78,6 +78,7 @@ class About extends React.Component {
         <div className="Education">
           <h3>National University of Singapore, Singapore</h3>
           <p>Bachelors in Computer Science</p>
+          <p>Expected time of graduation: May 2022</p>
           <EducationPopup/>
         </div>
       );
