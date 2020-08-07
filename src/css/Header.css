@@ -1,9 +1,9 @@
 .Header {
     width: 100%;
-    background-image: url("../media/header-background.png");
-    background-size: cover;
-    background-color: rgb(33, 10, 44);
-    background-blend-mode: screen;
+    background-image: url("../media/penguin.jpg");
+    /* background-size: cover; */
+    /* background-color: rgb(33, 10, 44); */
+    /* background-blend-mode: screen; */
     text-align: center;
     height: auto;
   }
@@ -20,7 +20,9 @@
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.69);
     border-radius: 30px;
-    padding: 9%;
+    padding-top: 9%;
+    padding-bottom: 9%;
+    width: 60%;
   }
 
   .HeaderText h3 {
@@ -44,5 +46,9 @@
   @media screen and (max-width: 600px) {
     .Header {
       height: auto;
+    }
+
+    .Shade {
+      width: 90%;
     }
   }
