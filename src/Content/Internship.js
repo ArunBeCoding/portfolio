@@ -61,7 +61,7 @@ class InternshipInfo extends React.Component {
             <div className="InternList">
                 <ul>
                     <li><Job name="Catena Technologies" time="Dec 2019 - Jan 2020" text={CATENA_TEXT} pic={Catena}/></li>
-                    <li><Job name="Cloud Kinetics" time="May 2020 - Current" text={CK_TEXT} pic={Cloud}/></li>
+                    <li><Job name="Cloud Kinetics" time="May 2020 - August 2020" text={CK_TEXT} pic={Cloud}/></li>
                 </ul>
             </div>
         );
