@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/Internship.css';
 import Catena from "../media/Catena.jpg";
+import Microsec from "../media/MicroSec.jpg";
 import Cloud from "../media/Cloud.jpg";
 import TLS from "../media/TLS_logo.png";
 import Invest from "../media/Invest_logo.jpg";
@@ -10,6 +11,7 @@ const CATENA_TEXT = "Optimized end to end testing deployment by working on GOCD 
 const CK_TEXT = "Designed infrastructures on Azure cloud platform and performed cost analysis for clients who were migrating their services to cloud. Other than learning fundamentals of cloud computing such as security, compute, and networking, I also had to learn containerization and serverless computing.";
 const TLS_TEXT = "As a project director for the community service directorate, I planned and implemented a reintegration program with residents of the Ashram halfway house which inspired them to re-evaluate their future and helped easing back into society. Moreover, we also collaborated with other local universities to conduct heritage activities for students from three universities.";
 const INVEST_TEXT = "I was a quantitative finance engineer for a year in NUS Invest. The link to Github repository that we worked on is given in the projects section below."; 
+const MICROSEC_TEXT = "This is microsec text."
 
 class JobPopup extends React.Component {
     constructor(props) {
@@ -61,7 +63,8 @@ class InternshipInfo extends React.Component {
             <div className="InternList">
                 <ul>
                     <li><Job name="Catena Technologies" time="Dec 2019 - Jan 2020" text={CATENA_TEXT} pic={Catena}/></li>
-                    <li><Job name="Cloud Kinetics" time="May 2020 - August 2020" text={CK_TEXT} pic={Cloud}/></li>
+                    <li><Job name="Cloud Kinetics" time="May 2020 - Aug 2020" text={CK_TEXT} pic={Cloud}/></li>
+                    <li><Job name="MicroSec" time="Jan 2021 - Aug 2021" text={MICROSEC_TEXT} pic={Microsec}/></li>
                 </ul>
             </div>
         );
